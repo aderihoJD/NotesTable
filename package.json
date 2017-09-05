@@ -4,12 +4,19 @@
   "description": "SPA on MERN (Mongo, Express, React, Node)",
   "main": "index.js",
   "scripts": {
+    "start": "set NODE_ENV=localhost&& nodemon server/app.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ilya Aderiho",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4"
+    "babel-cli": "^6.26.0",
+    "babel-plugin-object-values-to-object-keys": "^1.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
