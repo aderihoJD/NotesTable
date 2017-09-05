@@ -15,8 +15,16 @@ app.get('/notes', (req, res) => {
     db.listNotes().then(data => res.send(data));
 });
 
+app.get('/notes/:id', (req, res) => {
+    db.certainNote(req.params.id).then(data => res.send(data));
+});
+
 app.post('/notes', (req, res) => {
     db.createNote(req.body).then(data => res.send(data))
+});
+
+app.put('/notes', (req, res) => {
+    db.replaceNote(req.body).then(data => res.send(data));
 });
 
 app.delete('/notes/:id', (req, res) => {

@@ -15,6 +15,10 @@ export function listNotes() {
     return Note.find();
 }
 
+export function certainNote(id){
+    return Note.findById(id);
+}
+
 export function createNote(data) {
     const note = new Note({
         title: data.title,
@@ -24,6 +28,10 @@ export function createNote(data) {
     });
 
     return note.save();
+}
+
+export function replaceNote(data) {
+    return Note.findByIdAndUpdate(data._id, data, {new: true});
 }
 
 export function deleteNote(id){
