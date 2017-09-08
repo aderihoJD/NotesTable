@@ -1,9 +1,9 @@
 {
-  "presets": [
-    "env"
-  ],
-  "plugins": [
-    "transform-object-rest-spread",
-    "object-values-to-object-keys"
-  ]
+//  "presets": [
+//    "env"
+//  ],
+//  "plugins": [
+//    "transform-object-rest-spread",
+//    "object-values-to-object-keys"
+//  ]
 }
